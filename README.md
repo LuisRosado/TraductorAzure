@@ -78,8 +78,7 @@ Esta es una aplicación web simple construida con Flask que utiliza la API de Mi
 
 - `app.py`: Archivo principal de la aplicación Flask.
 - `templates/`: Carpeta que contiene los archivos HTML.
-- `static/`: Carpeta para archivos estáticos como CSS y JavaScript.
-- `.env`: Archivo para las variables de entorno (no subas este archivo a GitHub).
+- `.env`: Archivo para las variables de entorno (no comparta este archivo).
 
 ## Contribuciones
 
@@ -93,6 +92,6 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la Licencia MIT.
 
 
