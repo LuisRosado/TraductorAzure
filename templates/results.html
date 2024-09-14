@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .translation-container {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .text-box {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        .text-box:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .language-code {
+            font-size: 0.9rem;
+            color: #6c757d;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 0.5rem;
+            background-color: #007bff;
+            color: white;
+            border-radius: 0.25rem;
+            padding: 0.2rem 0.5rem;
+        }
+        .btn-custom {
+            background-color: #4361ee;
+            border-color: #4361ee;
+            color: #ffffff;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #3a0ca3;
+            border-color: #3a0ca3;
+            transform: translateY(-2px);
+        }
+        .header-icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 767.98px) {
+            .translation-container {
+                padding: 1.5rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+            .text-box {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="translation-container">
+            <header class="text-center mb-5">
+                <div class="header-icon">
+                    <i class="fa-solid fa-language" style="color: #2d62ed;"></i>
+                </div>    
+                <h1 class="display-5 fw-bold mb-3">Translation Results</h1>
+                <p class="lead text-muted">Your text has been translated</p>
+            </header>
+
+            <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                    <h2 class="h4 mb-3 fw-bold">Original Text</h2>
+                    <div class="text-box">
+                        <p class="mb-0">{{ original_text }}</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <h2 class="h4 mb-0 fw-bold">Translated Text</h2>
+                        <span class="language-code ms-2">{{ target_language }}</span>
+                    </div>
+                    <div class="text-box">
+                        <p class="mb-0">{{ translated_text }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="{{ url_for('index') }}" class="btn btn-custom">Try Another Translation</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
