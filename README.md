@@ -8,7 +8,7 @@ Esta es una aplicación web simple construida con Flask que utiliza la API de Mi
 
 - **Flask**: Framework web para Python.
 - **Bootstrap**: Framework CSS para el diseño responsivo.
-- **Microsoft Translator API**: Servicio de traducción de texto.
+- **Azure**: Servicio de traducción de texto.
 - **Python-dotenv**: Para gestionar variables de entorno.
 
 ## Instalación
