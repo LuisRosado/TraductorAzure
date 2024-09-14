@@ -1,5 +1,10 @@
 # TraductorAzure
 
+![index](https://github.com/user-attachments/assets/9bb2d0c7-f60f-4138-81f3-6df53ed81ab4)
+
+![result](https://github.com/user-attachments/assets/6a440300-481d-43c8-be6c-7bce11799c9b)
+
+
 ## Descripción
 
 Esta es una aplicación web simple construida con Flask que utiliza la API de Microsoft Translator para traducir texto de un idioma a otro. La aplicación permite a los usuarios ingresar texto en un idioma y recibir una traducción en el idioma seleccionado.
